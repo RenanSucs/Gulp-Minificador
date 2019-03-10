@@ -1,0 +1,106 @@
+Bloqueio de renderização = navegador congela para ler os scripts, por esse motivo
+é melhor colocar ele no final do body, para ele carregar a página primeiro.
+
+por padrão, navegador carrega arquivos serialmente(um após o outro).
+
+async ou defer = carrega todos os arquivos paralelamente.
+
+async = Arquivos independetes(não chama nenhum outro arquivo. Um arquivo nao depende do outro)
+
+defer =  Carrega paralelamente, porém aguarda a execução de todos os arquivos(Caso tenha dependencia)
+
+<script src="intro.js" async ou defer></script>
+
+----------------------------------------------------------------------------------------
+
+Comando(paramentro1, parametro2); Paramentro costumiza o comando.
+
+Exemplo:
+
+prompt("Digite seu nome");
+
+prompt("Digite seu nome", "Seu nome aqui"); Exemplo com mais de um parametro.Separar por virgula cada paramentro.
+
+----------------------------------------------------------------------------------------
+
+var chave = valor;
+
+Exemplo:
+
+var nome = "Renan";
+
+alert(nome); = Vai retornar o valor armazenado.
+
+----------------------------------------------------------------------------------------
+
+console.dir(String.prototype); //Mostra todas as funções que manipulam String
+
+console.dir(Number.prototype); //Mostra todas as funções que manipulam Number
+
+https://devdocs.io = Mostra a API completa do JavaScript!!! com todas as funções!
+
+-----------------------------------------------------------------------------------------
+
+Expressões Regulares:
+
+https://regex101.com/ - Site para testar expressao
+
+https://www.piazinho.com.br/ - Livro
+
+Metacaracteres:
+
+^ = Inicio da linha - inicio da linha ao fim
+$ = fim da linha - começa do final da linha para o começo
+
+[] = Lista de caracteres permitidos:
+^[0123456789] Permite que o primeiro caracter aceite numeros de 0 a 9
+^[0-9] mesma coisa, com intervalo para simplificar
+
+{} = Repetidor
+^[0-9]{5} = os 5 primeiroscaracteres vao aceitar esse valor
+{2,4} - minimo 2 digitos, maximo 4.
+
+\- = escaping = vai acertar caracter especial após a \
+
+\-? = pode colocar ou nao o '-'
+
+\d = apenas numeros
+
+\w = alfanumerico
+
++ = repetidor
+
+() = Grupos 
+(\.[A-z]{2,4})? = aceita o grupo ou nao
+
+CEP = 25171-000
+expressao = ^[0-9]{5}\-[0-9]{3}$
+expressao = ^[0-9]{5}\-?[0-9]{3}$
+expressao = ^\d{5}\-?\d{3}$
+
+Email
+
+ze@bol.com.br
+Ze@bol.com.br
+1zeD@bol.com.br
+jose-luis@ig.com.br
+dd.dsd@hotmail.com
+kado_senpai@gmail.com
+ze@tokyo.co
+
+expressao = ^[A-z0-9\.\-]{1,}\@\w+\.[A-z]{2,4}(\.[A-z]{2,4})?$
+
+-------------------------------------------------------------------------------------------------------------
+
+Orientação a Objeto:
+
+                            THIS
+                    Objeto Global Window
+Propriedades(variaveis):                 métodos(funcao):
+empresa                                  soma()
+
+-------------------------------------------------------------------------------------------------------------
+
+Estudo module-pattern: http://blog.caelum.com.br/organize-seu-codigo-javascript-de-maneira-facil/
+
+Estudo test de software: https://engenharia.elo7.com.br/jest-testar-seu-codigo-javascript-nunca-foi-tao-facil/

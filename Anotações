@@ -1,0 +1,54 @@
+grunt.js = task runner's (software que vc programa lista de tarefas 'pipeline')
+
+gulp.js = task runner's (software que vc programa lista de tarefas 'pipeline')
+
+brocolli.js = task runner's (software que vc programa lista de tarefas 'pipeline')
+
+todas ferramentas acima funcionam via terminal, escreve em javascript.
+
+https://gulpjs.com/ = site do gulp
+
+pipeline = define a ordem de execução das tarefas
+
+INSTALAÇÃO GULP:
+
+web8013@caelum113-10:~/Desktop/Projeto$ npm init -y //inicializa o node
+Wrote to /home/web8013/Desktop/Projeto/package.json:
+
+{
+  "name": "Projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+web8013@caelum113-10:~/Desktop/Projeto$ npm i gulp gulp-cli --save-dev //instala gulp ou ver no site do gulp para instalar modulo global
+
+web8013@caelum113-10:~/Desktop/Projeto$ cat package.json
+
+$touch gulpfile.js //criar arquivo gulpfile.js
+
+web8013@caelum113-10:~/Desktop/Projeto$ ./node_modules/.bin/gulp html //roda função criada no gulpfile.js
+
+$node teste //chamar resultado do teste.js
+
+npm i gulp-htmlmin --save-dev //instalar modulo para minificar html
+
+npm i gulp-uglify gulp-concat --save-dev //instalar modulo para minifcar JS
+
+npm i gulp-uglifycss --save-dev //instalar modulo para minifcar css
+
+
+$ ./node_modules/.bin/gulp html //executar a função do gulpfile no terminal para minificar 
+                           js   //executar a função js do gulpfile para minificar
+                           css  //executar a função css do gulpfile para minifcar
+
+$ ./node_modules/.bin/gulp //executar a ultima função que chama os 3 metodos
+
+COMMON.JS
